@@ -3,7 +3,9 @@ export default function Home() {
     <>
       <div className="bg-gray-900 min-h-screen flex items-center justify-center">
         <div className="bg-gray-700 rounded-lg p-8 shadow-2xl max-w-sm w-full">
-          <h2 className="text-center text-3xl text-white mb-1 font-bold">unabsurded</h2>
+          <div className="block flex items-center justify-center mb-3">
+            <img src="drawable/logo.png" alt="A clear description of the image" width="50" height="30" />
+          </div>
           <p className="text-gray-200 mb-6 block text-center text-sm">we're still cooking, drop a message.</p>
           <form action="https://formsubmit.co/unabsurded@gmail.com" method="POST">
             <div className="mb-4">
