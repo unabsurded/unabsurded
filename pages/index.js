@@ -1,4 +1,5 @@
-import Head from "next/head";
+import Head from "next/head"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
           <div className="block flex items-center justify-center mb-3">
             <img src="drawable/logo.png" alt="A clear description of the image" width="50" height="30" />
           </div>
-          <p className="text-gray-200 mb-6 block text-center text-sm">we're still cooking, drop a message.</p>
+          <p className="text-gray-200 mb-6 block text-center text-sm font-bold">We're still cooking, drop a message</p>
           <form action="https://formsubmit.co/unabsurded@gmail.com" method="POST">
             <div className="mb-4">
               <label className="block text-sm font-bold text-gray-300 mb-2" for="name">Name</label>
@@ -53,6 +54,9 @@ export default function Home() {
             </div>
             <button className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 shadow-2xl" type="submit">Send</button>
           </form>
+          <Link className="block w-full flex justify-center items-center mt-6" href="https://www.instagram.com/unabsurded/ " target="_blank">
+            <i className="text-4xl text-primary text-white hover:text-secondary dark:hover:text-secondary transition-colors bx bxl-instagram"></i>
+          </Link>
         </div>
       </div>
     </>
